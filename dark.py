@@ -4,8 +4,8 @@ import os
 import subprocess
 import shlex
 
-import colors as c
-import dark_builtins
+import dark_shell.colors as c
+import dark_shell.builtins as dark_builtins
 
 PROMPT = f"{c.PINK}> {c.GREY}"
 

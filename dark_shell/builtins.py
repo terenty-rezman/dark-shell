@@ -30,6 +30,10 @@ def exit(args):
 def cd(args):
     if(len(args) > 1):
         os.chdir(args[1])
+    else:
+        home_dir = os.environ.get("HOME")
+        if home_dir:
+            os.chdir(home_dir)
 
     print(os.getcwd())
 
