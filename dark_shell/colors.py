@@ -10,7 +10,7 @@ def pallete_256():
     GREEN = template.format(85)
     YELLOW = template.format(220)
     DARK = template.format(8)
-    GREY = template.format(247)
+    GREY = template.format(245)
     BLACK = template.format(238)
 
     return NONE, PINK, RED, BLUE, GREEN, YELLOW, DARK, GREY, BLACK

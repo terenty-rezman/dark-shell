@@ -9,9 +9,18 @@ import dark_shell.builtins as dark_builtins
 
 PROMPT = f"{c.PINK}> {c.GREY}"
 
-WELLCOME_MSG = f"""
-{c.DARK} welcome to {c.BLACK}dark {c.DARK}shell
-"""
+
+def print_wellcome_msg():
+    import getpass
+    import socket
+
+    username = getpass.getuser()
+    hostname = socket.gethostname()
+
+    msg = f"{c.DARK}{username}{c.PINK}@{c.DARK}{hostname}{c.PINK} > {c.BLACK}dark shell"
+    print(msg)
+    print(f"{c.DARK}" + os.getcwd())
+
 
 # for python exec()
 python_exec_globals = {"PROMPT": PROMPT}
@@ -57,5 +66,5 @@ def shell_loop():
 
 
 if __name__ == "__main__":
-    print(WELLCOME_MSG)
+    print_wellcome_msg()
     shell_loop()

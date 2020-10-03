@@ -1,5 +1,5 @@
 # dark shell for linux
-homemade implementation of linux shell written in __python3__
+simple homemade implementation of linux shell written in __python3__
 
 # prerequisite
 you need __python3__ installed on your system
@@ -15,9 +15,9 @@ $ cd dark-shell && ./dark.py
 # installing dark as default shell
 to install __dark__ as your defalut shell for current user use:
 ```
-$ ./install.py
+$ ./set_as_default_shell.py
 ```
 to restore your default shell use:
 ```
-$ ./uninstall.py
+$ ./restore_default_shell.py
 ```
