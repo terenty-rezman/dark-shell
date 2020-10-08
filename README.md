@@ -1,6 +1,8 @@
 # dark shell for linux
 simple homemade implementation of linux shell written in __python3__
 
+supports executing python code directly from shell
+
 # prerequisite
 you need __python3__ installed on your system
 

@@ -28,9 +28,12 @@ python_exec_locals = {}
 
 
 def exec_as_python_code(code):
-    result = exec(code, python_exec_globals, python_exec_locals)
-    if(result):
-        print(result)
+    try:
+        result = eval(code, python_exec_globals, python_exec_locals)
+        if(result is not None):
+            print(result)
+    except Exception:
+        exec(code, python_exec_globals, python_exec_locals)
 
 
 def dark_execute(args, raw_command_line):
