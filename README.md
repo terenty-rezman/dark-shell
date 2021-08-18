@@ -3,6 +3,8 @@ simple homemade implementation of linux shell written in __python3__
 
 supports executing python code directly from shell
 
+![image](https://user-images.githubusercontent.com/58115884/129879787-36974925-d859-4c2e-a8c9-cce857a84992.png)
+
 # prerequisite
 you need __python3__ installed on your system
 
